@@ -8,4 +8,6 @@ import kotlinx.serialization.Serializable
 data class MusicLibrary(
     @SerialName("Tracks")
     val tracks: List<MusicTrack>,
+    @SerialName("Generated")
+    val generated: String, // datetime string
 )

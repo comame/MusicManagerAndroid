@@ -54,3 +54,7 @@ data class MusicTrack (
     @SerialName("PersistentID")
     val persistentID: String,
 )
+
+fun MusicTrack.androidFileName(): String {
+    return "${this.persistentID}.${this.format}"
+}
